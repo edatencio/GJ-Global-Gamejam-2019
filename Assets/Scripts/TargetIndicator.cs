@@ -48,8 +48,8 @@ public class TargetIndicator : MonoBehaviour
      *************************************************************************************************/
      private void OnDisable()
      {
-          if (icon.gameObject != null)
-               Destroy(icon.gameObject);
+          //icon.gameObject.SetActive(false);
+          Destroy(targetParticleSystem.gameObject);
      }
 
      /*************************************************************************************************
