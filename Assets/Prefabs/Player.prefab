@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 65538623225735566}
   - component: {fileID: 114912791908850556}
   - component: {fileID: 114488242784172212}
+  - component: {fileID: 114951506017968610}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -661,6 +662,18 @@ MonoBehaviour:
   m_RevRangeBoundary: 1
   m_SlipLimit: 0.3
   m_BrakeTorque: 20000
+--- !u!114 &114951506017968610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879836029077918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2205a56661151b74390b99ab7e9fd255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPosition: {fileID: 11400000, guid: 635ea63c7ab48d4478f712307536fbe8, type: 2}
 --- !u!146 &146062560212490286
 WheelCollider:
   m_ObjectHideFlags: 1

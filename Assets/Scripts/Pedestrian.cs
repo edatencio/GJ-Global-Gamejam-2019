@@ -1,5 +1,4 @@
 using UnityEngine;
-using NaughtyAttributes;
 
 public class Pedestrian : MonoBehaviour
 {
@@ -7,21 +6,23 @@ public class Pedestrian : MonoBehaviour
      *** Variables
      *************************************************************************************************/
      [SerializeField] private ParticleSystem pickupParticleSystem;
-     [SerializeField]
-     private
+     [SerializeField] private Vector3Asset playerPosition;
 
      /*************************************************************************************************
      *** Start
      *************************************************************************************************/
      private void Start()
      {
+          pickupParticleSystem.gameObject.SetActive(false);
      }
 
      /*************************************************************************************************
-     *** Update
+     *** LateUpdate
      *************************************************************************************************/
-     private void Update()
+     private void LateUpdate()
      {
+          transform.rotation = Quaternion.LookRotation((playerPosition.Value - transform.position).With(y: 0f));
+          Debug.DrawRay(transform.position, playerPosition.Value - transform.position, Color.red);
      }
 
      /*************************************************************************************************
@@ -31,7 +32,8 @@ public class Pedestrian : MonoBehaviour
      {
           if (other.tag == Constants.Player)
           {
-               Instantiate(pickupParticleSystem, transform.position + Vector3.up, pickupParticleSystem.transform.rotation);
+               pickupParticleSystem.transform.SetParent(null);
+               pickupParticleSystem.gameObject.SetActive(true);
                Destroy(gameObject);
           }
      }
