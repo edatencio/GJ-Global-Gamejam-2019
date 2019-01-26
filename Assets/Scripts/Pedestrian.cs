@@ -1,4 +1,5 @@
 using UnityEngine;
+using NaughtyAttributes;
 
 public class Pedestrian : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class Pedestrian : MonoBehaviour
      *** Variables
      *************************************************************************************************/
      [SerializeField] private ParticleSystem pickupParticleSystem;
+     [SerializeField]
+     private
 
      /*************************************************************************************************
      *** Start
@@ -28,7 +31,7 @@ public class Pedestrian : MonoBehaviour
      {
           if (other.tag == Constants.Player)
           {
-               Instantiate(pickupParticleSystem);
+               Instantiate(pickupParticleSystem, transform.position + Vector3.up, pickupParticleSystem.transform.rotation);
                Destroy(gameObject);
           }
      }
