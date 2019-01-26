@@ -4710,8 +4710,8 @@ MonoBehaviour:
   m_MaxHandbrakeTorque: 100000000
   m_Downforce: 100
   m_SpeedType: 0
-  m_Topspeed: 150
-  NoOfGears: 2
+  m_Topspeed: 300
+  NoOfGears: 1
   m_RevRangeBoundary: 1
   m_SlipLimit: 0.3
   m_BrakeTorque: 20000
