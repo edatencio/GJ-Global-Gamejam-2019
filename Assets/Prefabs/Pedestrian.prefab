@@ -1768,6 +1768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupParticleSystem: {fileID: 198300789386925536}
   playerPosition: {fileID: 11400000, guid: 635ea63c7ab48d4478f712307536fbe8, type: 2}
+  cameraShake: {fileID: 0}
 --- !u!136 &136532666547212300
 CapsuleCollider:
   m_ObjectHideFlags: 1
