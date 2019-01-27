@@ -1368,9 +1368,6 @@ MonoBehaviour:
   rend: {fileID: 178374915}
   mainCamera: {fileID: 534669904}
   playerPosition: {fileID: 11400000, guid: 635ea63c7ab48d4478f712307536fbe8, type: 2}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1 &181170210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,6 +1442,7 @@ GameObject:
   - component: {fileID: 184440158}
   - component: {fileID: 184440157}
   - component: {fileID: 184440159}
+  - component: {fileID: 184440160}
   m_Layer: 0
   m_Name: House_3
   m_TagString: Untagged
@@ -1522,6 +1520,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 694.6562, y: 1479.168, z: 880.42365}
   m_Center: {x: -0.000122070305, y: 618.19775, z: 277.24915}
+--- !u!114 &184440160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184440155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9b1167bdc1251479aa4b9639191c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 184440157}
+  mainCamera: {fileID: 534669904}
+  playerPosition: {fileID: 11400000, guid: 635ea63c7ab48d4478f712307536fbe8, type: 2}
 --- !u!1001 &190988020
 Prefab:
   m_ObjectHideFlags: 0
@@ -2634,6 +2646,7 @@ GameObject:
   - component: {fileID: 371598184}
   - component: {fileID: 371598183}
   - component: {fileID: 371598185}
+  - component: {fileID: 371598186}
   m_Layer: 0
   m_Name: Shop
   m_TagString: Untagged
@@ -2711,6 +2724,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1123.2003, y: 883.9, z: 539.8621}
   m_Center: {x: -0.00070877397, y: -0.4, z: -285.53647}
+--- !u!114 &371598186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371598181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9b1167bdc1251479aa4b9639191c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 371598183}
+  mainCamera: {fileID: 534669904}
+  playerPosition: {fileID: 11400000, guid: 635ea63c7ab48d4478f712307536fbe8, type: 2}
 --- !u!1 &380403884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4112,6 +4139,7 @@ GameObject:
   - component: {fileID: 647498138}
   - component: {fileID: 647498137}
   - component: {fileID: 647498139}
+  - component: {fileID: 647498140}
   m_Layer: 0
   m_Name: House_2
   m_TagString: Untagged
@@ -4189,6 +4217,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1062, y: 1509.88, z: 1200}
   m_Center: {x: 190.97485, y: 731.7296, z: 668}
+--- !u!114 &647498140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 647498135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9b1167bdc1251479aa4b9639191c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 647498137}
+  mainCamera: {fileID: 534669904}
+  playerPosition: {fileID: 11400000, guid: 635ea63c7ab48d4478f712307536fbe8, type: 2}
 --- !u!1001 &682753019
 Prefab:
   m_ObjectHideFlags: 0

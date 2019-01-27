@@ -1,23 +1,30 @@
 using UnityEngine;
 using NaughtyAttributes;
+using Surge;
 
 public class BuildingFade : MonoBehaviour
 {
      /*************************************************************************************************
      *** Variables
      *************************************************************************************************/
+
+     //[SerializeField] private float fadeDuration;
      [SerializeField] private Renderer rend;
      [SerializeField] private Camera mainCamera;
      [SerializeField] private Vector3Asset playerPosition;
 
+     private Collider thisCollider;
      private enum State { Opaque, Transparent }
      private State state;
+
+     //private Surge.TweenSystem.TweenBase tween;
 
      /*************************************************************************************************
      *** Start
      *************************************************************************************************/
      private void Start()
      {
+          thisCollider = GetComponent<Collider>();
           state = State.Transparent;
           Opaque();
      }
@@ -33,7 +40,7 @@ public class BuildingFade : MonoBehaviour
 
           if (hit.collider.tag == Constants.Player)
                Opaque();
-          else
+          else if (hit.collider == thisCollider)
                Transparent();
      }
 
@@ -54,6 +61,10 @@ public class BuildingFade : MonoBehaviour
                color.a = 0.2f;
                rend.material.SetColor("_Color", color);
                rend.material.ChangeRenderMode(StandardShaderUtils.BlendMode.Transparent);
+
+               //if (tween != null && tween.Status == Tween.TweenStatus.Running)
+               //     tween.Stop();
+               //tween = Tween.Color(rend.material, color, fadeDuration, 0f, Tween.EaseInOut, Tween.LoopType.None, null, null, true);
           }
      }
 
@@ -66,8 +77,13 @@ public class BuildingFade : MonoBehaviour
 
                Color color = rend.material.color;
                color.a = 1f;
+
                rend.material.SetColor("_Color", color);
                rend.material.ChangeRenderMode(StandardShaderUtils.BlendMode.Opaque);
+
+               //if (tween != null && tween.Status == Tween.TweenStatus.Running)
+               //     tween.Stop();
+               //tween = Tween.Color(rend.material, color, fadeDuration, 0f, Tween.EaseInOut, Tween.LoopType.None, null, null, true);
           }
      }
 }
