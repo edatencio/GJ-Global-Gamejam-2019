@@ -57,10 +57,13 @@ public class BuildingFade : MonoBehaviour
           if (state != State.Transparent)
           {
                state = State.Transparent;
-               Color color = rend.material.color;
-               color.a = 0.2f;
-               rend.material.SetColor("_Color", color);
-               rend.material.ChangeRenderMode(StandardShaderUtils.BlendMode.Transparent);
+
+               //Color color = rend.material.color;
+               //color.a = 0.2f;
+               rend.material.shader = Shader.Find("Mobile/Particles/Multiply");
+
+               //rend.material.SetColor("_Color", color);
+               //rend.material.ChangeRenderMode(StandardShaderUtils.BlendMode.Transparent);
 
                //if (tween != null && tween.Status == Tween.TweenStatus.Running)
                //     tween.Stop();
@@ -74,12 +77,13 @@ public class BuildingFade : MonoBehaviour
           if (state != State.Opaque)
           {
                state = State.Opaque;
+               rend.material.shader = Shader.Find("Standard");
 
-               Color color = rend.material.color;
-               color.a = 1f;
+               //Color color = rend.material.color;
+               //color.a = 1f;
 
-               rend.material.SetColor("_Color", color);
-               rend.material.ChangeRenderMode(StandardShaderUtils.BlendMode.Opaque);
+               //rend.material.SetColor("_Color", color);
+               //rend.material.ChangeRenderMode(StandardShaderUtils.BlendMode.Opaque);
 
                //if (tween != null && tween.Status == Tween.TweenStatus.Running)
                //     tween.Stop();
