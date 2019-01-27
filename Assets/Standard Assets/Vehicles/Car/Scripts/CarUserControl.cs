@@ -19,11 +19,7 @@ namespace UnityStandardAssets.Vehicles.Car
                float h = Input.GetAxis("Horizontal");
                float v = Input.GetAxis("Vertical");
 
-#if !MOBILE_INPUT
                m_Car.Move(h, v, v, 0f);
-#else
-                           m_Car.Move(h, v, v, 0f);
-#endif
           }
      }
 }
