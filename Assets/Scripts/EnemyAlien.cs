@@ -15,6 +15,7 @@ public class EnemyAlien : MonoBehaviour
      [SerializeField] private ParticleSystem deathParticle;
 
      private Vector3 currentPlayerPosition;
+     private bool playerDead;
 
      /*************************************************************************************************
      *** Start
@@ -22,6 +23,7 @@ public class EnemyAlien : MonoBehaviour
      private void Start()
      {
           deathParticle.gameObject.SetActive(false);
+          animator.SetBool("Move", true);
      }
 
      /*************************************************************************************************
@@ -33,8 +35,12 @@ public class EnemyAlien : MonoBehaviour
           {
                agent.destination = playerPosition.Value;
                currentPlayerPosition = playerPosition.Value;
+          }
 
-               animator.SetFloat("Velocity", Mathf.Abs(rBody.velocity.magnitude));
+          if (playerDead && agent.enabled)
+          {
+               agent.enabled = false;
+               animator.SetBool("Move", false);
           }
      }
 
@@ -59,9 +65,14 @@ public class EnemyAlien : MonoBehaviour
      [Button]
      private void Death()
      {
-          gameOver.Raise();
           deathParticle.gameObject.transform.SetParent(null);
           deathParticle.gameObject.SetActive(true);
+          gameOver.Raise();
           Destroy(gameObject);
+     }
+
+     public void PlayerKilled()
+     {
+          playerDead = true;
      }
 }

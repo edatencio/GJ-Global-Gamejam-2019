@@ -21,9 +21,6 @@ public class ButtonPressed : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
      {
           if (!isPressed)
                return;
-
-          // DO SOMETHING HERE
-          Debug.Log("Pressed");
      }
 
      /*************************************************************************************************

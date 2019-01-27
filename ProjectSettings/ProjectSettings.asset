@@ -53,7 +53,7 @@ PlayerSettings:
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
-  displayResolutionDialog: 1
+  displayResolutionDialog: 2
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
@@ -119,7 +119,13 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 8300000, guid: 3463d8c165e92c340a249d9e2841fe30, type: 3}
+  - {fileID: 8300000, guid: bb17f118966478041a7f0bc74e423f48, type: 3}
+  - {fileID: 8300000, guid: cd531c282b97922449b1169b23d19a86, type: 3}
+  - {fileID: 8300000, guid: 21222380b0a69094db696186c12b6695, type: 3}
+  - {fileID: 8300000, guid: 29abdeac334152347bc9f48125e11736, type: 3}
+  - {fileID: 8300000, guid: c232e1da212015845af579261117c7d9, type: 3}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

@@ -1,24 +1,17 @@
 using UnityEngine;
-using NaughtyAttributes;
-using System.Collections.Generic;
 
-public class DialogManager : MonoBehaviour
+public class SetResolution : MonoBehaviour
 {
      /*************************************************************************************************
      *** Variables
      *************************************************************************************************/
-     [SerializeField] private RPGTalk rpgTalkFirstPickup;
-     [SerializeField] private float delayToHide;
-
-     public int pedestriansPiked;
-     private Timer timerHide;
 
      /*************************************************************************************************
      *** Start
      *************************************************************************************************/
      private void Start()
      {
-          timerHide = new Timer();
+          Screen.SetResolution(600, 800, false);
      }
 
      /*************************************************************************************************
@@ -26,11 +19,6 @@ public class DialogManager : MonoBehaviour
      *************************************************************************************************/
      private void Update()
      {
-          if (timerHide.isRunning && timerHide.ElapsedSeconds > delayToHide)
-          {
-               timerHide.Stop();
-               rpgTalkFirstPickup.showWithDialog[0].gameObject.SetActive(false);
-          }
      }
 
      /*************************************************************************************************
@@ -40,10 +28,4 @@ public class DialogManager : MonoBehaviour
      /*************************************************************************************************
      *** Methods
      *************************************************************************************************/
-     public void Talk(Name name)
-     {
-          timerHide.Start();
-          rpgTalkFirstPickup.NewTalk(string.Concat(name.ToString(), "-begin"), string.Concat(name.ToString(), "-end"));
-          pedestriansPiked++;
-     }
 }

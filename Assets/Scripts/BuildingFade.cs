@@ -58,9 +58,10 @@ public class BuildingFade : MonoBehaviour
           {
                state = State.Transparent;
 
+               rend.material.shader = Shader.Find("Mobile/Particles/Multiply");
+
                //Color color = rend.material.color;
                //color.a = 0.2f;
-               rend.material.shader = Shader.Find("Mobile/Particles/Multiply");
 
                //rend.material.SetColor("_Color", color);
                //rend.material.ChangeRenderMode(StandardShaderUtils.BlendMode.Transparent);
@@ -77,6 +78,7 @@ public class BuildingFade : MonoBehaviour
           if (state != State.Opaque)
           {
                state = State.Opaque;
+
                rend.material.shader = Shader.Find("Standard");
 
                //Color color = rend.material.color;

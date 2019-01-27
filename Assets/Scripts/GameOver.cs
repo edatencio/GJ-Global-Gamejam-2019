@@ -1,24 +1,27 @@
 using UnityEngine;
-using NaughtyAttributes;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
-public class DialogManager : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
      /*************************************************************************************************
      *** Variables
      *************************************************************************************************/
-     [SerializeField] private RPGTalk rpgTalkFirstPickup;
-     [SerializeField] private float delayToHide;
+     [SerializeField] private DialogManager dialogManager;
+     [SerializeField] private PlayerController playerController;
+     [SerializeField] private GameObject gameOverPanel;
+     [SerializeField] private GameObject youWinPanel;
+     [SerializeField] private GameObject buttons;
 
-     public int pedestriansPiked;
-     private Timer timerHide;
+     private bool once;
+     private bool gameOver;
 
      /*************************************************************************************************
      *** Start
      *************************************************************************************************/
      private void Start()
      {
-          timerHide = new Timer();
+          gameOverPanel.SetActive(false);
+          youWinPanel.SetActive(false);
      }
 
      /*************************************************************************************************
@@ -26,10 +29,18 @@ public class DialogManager : MonoBehaviour
      *************************************************************************************************/
      private void Update()
      {
-          if (timerHide.isRunning && timerHide.ElapsedSeconds > delayToHide)
+          if (dialogManager.pedestriansPiked == 6 && !gameOverPanel.activeSelf && !youWinPanel.activeSelf)
           {
-               timerHide.Stop();
-               rpgTalkFirstPickup.showWithDialog[0].gameObject.SetActive(false);
+               youWinPanel.SetActive(true);
+               buttons.SetActive(true);
+               playerController.Stop();
+               playerController.enabled = false;
+          }
+
+          if (gameOver && !youWinPanel.activeSelf && !gameOverPanel.activeSelf)
+          {
+               buttons.SetActive(true);
+               gameOverPanel.SetActive(true);
           }
      }
 
@@ -40,10 +51,18 @@ public class DialogManager : MonoBehaviour
      /*************************************************************************************************
      *** Methods
      *************************************************************************************************/
-     public void Talk(Name name)
+     public void Done()
      {
-          timerHide.Start();
-          rpgTalkFirstPickup.NewTalk(string.Concat(name.ToString(), "-begin"), string.Concat(name.ToString(), "-end"));
-          pedestriansPiked++;
+          gameOver = transform;
+     }
+
+     public void TryAgain()
+     {
+          SceneManager.LoadScene(0);
+     }
+
+     public void Quit()
+     {
+          Application.Quit();
      }
 }
