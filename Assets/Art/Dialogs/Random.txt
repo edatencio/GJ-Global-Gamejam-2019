@@ -1,26 +1,87 @@
-[title=Adier-begin]
-Adier: Edwaaaaaaaaaard, gracias loco.
-[title=Adier-end]
+[title=Adier0-begin]
+Adier: [dub=0] Aaaahhhhhh.
+[title=Adier0-end]
 
-[title=Antonio-begin]
-Antonio: Dale pap�, de aqu� pa' Colombia.
-[title=Antonio-end]
+[title=Adier1-begin]
+Adier: [dub=1] Aaaaaahhhasdhkjashdkj, chamoo.
+[title=Adier1-end]
 
-[title=Dali-begin]
-Dali: ... Hola.
-[title=Dali-end]
+[title=Adier2-begin]
+Adier: [dub=2] Puedo poner capope?.
+[title=Adier2-end]
 
-[title=Devis-begin]
-Devis: Soy muy malooo, soy muy maloooo.
-[title=Devis-end]
+[title=Adier3-begin]
+Adier: [dub=3] Hey vamos a recogerlo ahi que sta solo, apurate.
+[title=Adier3-end]
 
-[title=Edrick-begin]
-Edrick: Buenas, bueeenas.
-[title=Edrick-end]
+[title=Antonio4-begin]
+Antonio: [dub=4] Auxilio.
+[title=Antonio4-end]
 
-[title=Eugenio-begin]
-Eugenio: Hasta que alf�n llegaste chico.
-[title=Dali-end]
+[title=Antonio5-begin]
+Antonio: [dub=5] Loco cuidao cuidao cuidao.
+[title=Antonio5-end]
 
+[title=Antonio6-begin]
+Antonio: [dub=6] Papi vo sois lo maximo, me salvaste la vida.
+[title=Antonio6-end]
 
+[title=Dali7-begin]
+Dali: [dub=7] Apurate que es peligroso quedarse mucho tiempo aqui.
+[title=Dali7-end]
 
+[title=Dali8-begin]
+Dali: [dub=8] Es el dia del platanoooooo, sssiiiii, por finnnnn.
+[title=Dali8-end]
+
+[title=Dali9-begin]
+Dali: [dub=9] Soy muy maloooo.
+[title=Dali9-end]
+
+[title=Dali10-begin]
+Dali: [dub=10] Te detendremos.
+[title=1Dali0-end]
+
+[title=Dali11-begin]
+Dali: [dub=11] Yamete kureee.
+[title=Dali11-end]
+
+[title=Devis12-begin]
+Devis: [dub=12] Loco nooo.
+[title=Devis12-end]
+
+[title=Devis13-begin]
+Devis: [dub=13] Loco NOO, NOOO.
+[title=Devis13-end]
+
+[title=Devis14-begin]
+Devis: [dub=14] Chamo apurate que despues nos meten el PRO EVOLUTION SOCCER.
+[title=Devis14-end]
+
+[title=Edrick15-begin]
+Edrick: [dub=15] Aja pero..., aqui falta gente.
+[title=Edrick15-end]
+
+[title=Edrick16-begin]
+Edrick: [dub=16] MMmmmmm..., yaa... De cuando a aca vo manejai sincronico chamo?.
+[title=Edrick16-end]
+
+[title=Edrick17-begin]
+Edrick: [dub=17] Metele cuchara que falta gente.
+[title=Edrick17-end]
+
+[title=Eugenio18-begin]
+Eugenio: [dub=18] Dale mas durooo.
+[title=Eugenio18-end]
+
+[title=Eugenio19-begin]
+Eugenio: [dub=19] Pero apurate.
+[title=Eugenio19-end]
+
+[title=Eugenio20-begin]
+Eugenio: [dub=20] Papi dale mas duro, ya empezo la mision.
+[title=Eugenio20-end]
+
+[title=Eugenio21-begin]
+Eugenio: [dub=21] Ya te ibamos a dejar botao.
+[title=Eugenio21-end]

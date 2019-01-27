@@ -8,11 +8,10 @@ public class DialogManager : MonoBehaviour
      *** Variables
      *************************************************************************************************/
      [SerializeField] private RPGTalk rpgTalkFirstPickup;
-     [SerializeField] private RPGTalk rpgTalkRandom;
-     [SerializeField] private float delay;
+     [SerializeField] private float delayToHide;
 
      private List<string> pedestriansPikedup;
-     private Timer timer;
+     private Timer timerHide;
 
      /*************************************************************************************************
      *** Start
@@ -20,7 +19,7 @@ public class DialogManager : MonoBehaviour
      private void Start()
      {
           pedestriansPikedup = new List<string>();
-          timer = new Timer();
+          timerHide = new Timer();
      }
 
      /*************************************************************************************************
@@ -28,9 +27,9 @@ public class DialogManager : MonoBehaviour
      *************************************************************************************************/
      private void Update()
      {
-          if (timer.isRunning && timer.ElapsedSeconds > delay)
+          if (timerHide.isRunning && timerHide.ElapsedSeconds > delayToHide)
           {
-               timer.Stop();
+               timerHide.Stop();
                rpgTalkFirstPickup.showWithDialog[0].gameObject.SetActive(false);
           }
      }
@@ -44,18 +43,7 @@ public class DialogManager : MonoBehaviour
      *************************************************************************************************/
      public void Talk(Name name)
      {
-          timer.Start();
-
-          //if (pedestriansPikedup.Count == 0)
-          {
-               rpgTalkFirstPickup.NewTalk(string.Concat(name.ToString(), "-begin"), string.Concat(name.ToString(), "-end"));
-               pedestriansPikedup.Add(name.ToString());
-          }
-
-          //else
-          {
-               //rpgTalkRandom.NewTalk(string.Concat(name.ToString(), "-begin"), string.Concat(name.ToString(), "-end"));
-               //pedestriansPikedup.Add(name.ToString());
-          }
+          timerHide.Start();
+          rpgTalkFirstPickup.NewTalk(string.Concat(name.ToString(), "-begin"), string.Concat(name.ToString(), "-end"));
      }
 }

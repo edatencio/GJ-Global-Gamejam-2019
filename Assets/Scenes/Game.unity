@@ -384,8 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rpgTalkFirstPickup: {fileID: 1532559211}
-  rpgTalkRandom: {fileID: 0}
-  delay: 5
+  delayToHide: 5
 --- !u!1 &20802948
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,23 @@
+[title=Adier-begin]
+Adier: [dub=0] Edwaaaaaaaaaard, gracias loco.
+[title=Adier-end]
+
+[title=Antonio-begin]
+Antonio: [dub=1] Dale papa, de aqui pa' Colombia.
+[title=Antonio-end]
+
+[title=Dali-begin]
+Dali: [dub=2] ... Hola.
+[title=Dali-end]
+
+[title=Devis-begin]
+Devis: [dub=3] Soy muy malooo, soy muy maloooo.
+[title=Devis-end]
+
+[title=Edrick-begin]
+Edrick: [dub=4] Buenas, bueeenas.
+[title=Edrick-end]
+
+[title=Eugenio-begin]
+Eugenio: [dub=5] Hasta que alfin llegaste chico.
+[title=Eugenio-end]
