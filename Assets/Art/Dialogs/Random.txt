@@ -1,0 +1,26 @@
+[title=Adier-begin]
+Adier: Edwaaaaaaaaaard, gracias loco.
+[title=Adier-end]
+
+[title=Antonio-begin]
+Antonio: Dale pap�, de aqu� pa' Colombia.
+[title=Antonio-end]
+
+[title=Dali-begin]
+Dali: ... Hola.
+[title=Dali-end]
+
+[title=Devis-begin]
+Devis: Soy muy malooo, soy muy maloooo.
+[title=Devis-end]
+
+[title=Edrick-begin]
+Edrick: Buenas, bueeenas.
+[title=Edrick-end]
+
+[title=Eugenio-begin]
+Eugenio: Hasta que alf�n llegaste chico.
+[title=Dali-end]
+
+
+

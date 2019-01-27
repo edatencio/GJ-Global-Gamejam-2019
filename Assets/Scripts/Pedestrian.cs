@@ -1,5 +1,7 @@
 using UnityEngine;
 
+public enum Name { Adier, Antonio, Dali, Devis, Edrick, Eugenio }
+
 public class Pedestrian : MonoBehaviour
 {
      /*************************************************************************************************
@@ -7,6 +9,8 @@ public class Pedestrian : MonoBehaviour
      *************************************************************************************************/
      [SerializeField] private ParticleSystem pickupParticleSystem;
      [SerializeField] private Vector3Asset playerPosition;
+     [SerializeField] private Name pedestrianName;
+     [SerializeField] private DialogManager dialogManager;
 
      /*************************************************************************************************
      *** Start
@@ -34,6 +38,7 @@ public class Pedestrian : MonoBehaviour
           {
                pickupParticleSystem.transform.SetParent(null);
                pickupParticleSystem.gameObject.SetActive(true);
+               dialogManager.Talk(pedestrianName);
                Destroy(gameObject);
           }
      }
